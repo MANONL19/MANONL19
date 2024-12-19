@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif&family=Playfair+Display:wght@600&display=swap");
+
+/* Global Styles */
+html {
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #ff6347;
+}
+
+/* Header */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.navbar {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 20px;
+}
+
+.navbar-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-list a:hover {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.navbar-list li a.active {
+  color: #ff6347;
+  /* Une couleur de surbrillance, tu peux choisir celle que tu préfères */
+  font-weight: bold;
+  /* Facultatif pour rendre le texte plus visible */
+  background-color: #f2f2f2;
+  /* Facultatif pour un fond */
+}
+
+/* Hero Section */
+/* Section Discover */
+.discover {
+  position: relative; /* Permet de positionner les éléments à l'intérieur de la section */
+  width: 100%;
+  height: 400px; /* Définir une hauteur appropriée pour l'image */
+  overflow: hidden; /* Empêche le contenu de déborder */
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* S'assure que l'image couvre toute la section sans déformer l'aspect */
+  filter: brightness(50%); /* Assombrit l'image pour que le texte soit plus visible */
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white; /* Texte en blanc */
+  z-index: 2;
+}
+
+.text-overlay h1 {
+  font-size: 4rem; /* Taille de police plus grande pour le titre */
+  margin: 0;
+  font-weight: 700;
+}
+
+.text-overlay h4 {
+  font-size: 2rem; /* Taille du sous-titre plus petite */
+  margin: 10px 0;
+  font-weight: 400;
+}
+
+.text-overlay button {
+  padding: 10px 20px;
+  background-color: #2980b9; /* Couleur de fond du bouton */
+  color: white; /* Texte du bouton en blanc */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.text-overlay button:hover {
+  background-color: #3498db; /* Couleur du bouton au survol */
+}
+
+
+/* Content Boxes */
+.box-container {
+  padding: 20px;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.box-description {
+  background-color: #ffffff; /* Fond blanc pour un look propre et épuré */
+  padding: 20px;
+  border-radius: 12px; /* Coins arrondis pour une apparence plus douce */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet de profondeur */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Effet de transition fluide */
+}
+
+.box-description:hover {
+  transform: translateY(-5px); /* Légère élévation au survol pour un effet interactif */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Ombre plus marquée au survol */
+}
+
+.box-description h3 {
+  color: #333333; /* Titre dans une couleur sombre pour une bonne lisibilité */
+  font-size: 1.5rem; /* Taille de police adaptée pour le titre */
+  font-weight: 600; /* Poids du texte pour plus de présence */
+  margin-bottom: 10px;
+}
+
+
+.box-description p {
+  color: #666666; /* Texte plus clair mais toujours lisible */
+  font-size: 1rem;
+  line-height: 1.6; /* Améliore la lisibilité du texte */
+}
+
+.box-description a {
+  color: #0066cc; /* Lien bleu pour le contraste et l'interaction */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.box-description a:hover {
+  color: #ff6347; /* Change la couleur du lien au survol pour un effet dynamique */
+  text-decoration: underline;
+}
+
+
+.box-description>h1 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.box img {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+}
+
+
+/* Beauty section  */
+/* Beauté Section */
+.details-box {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.details-box img {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.details-box h1,
+.details-box h2 {
+  text-align: center;
+  color: #333;
+}
+
+.details-box p {
+  line-height: 1.6;
+  margin: 10px 0;
+  color: #555;
+}
+
+
+/* mode section */
+/* Hero Section */
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 50px;
+  border-bottom: 1px solid #ddd;
+}
+
+.hero-image {
+  max-width: 50%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero-text {
+  max-width: 40%;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 1.7rem;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Article Section */
+.article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 20px;
+}
+
+.article-image {
+  width: 45%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.article-text {
+  width: 50%;
+  max-width: 800px;
+  line-height: 1.8;
+  text-align: justify;
+  padding-left: 20px;
+}
+
+.article-text a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.article-text a:hover {
+  color: #ffd700;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer h2 {
+  margin: 0 0 10px;
+  color: #ff6347;
+}
+
+footer a {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+/* Back to Top Button */
+.gototop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ff6347;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.gototop:hover {
+  background-color: #e5533d;
+  transform: scale(1.1);
+}
+
+.gototop i:hover {
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .discover>h1 {
+    font-size: 2rem;
+  }
+
+  .discover>h4 {
+    font-size: 1rem;
+  }
+
+  .navbar-list {
+    flex-direction: column;
+  }
+
+  .box {
+    flex-direction: column;
+  }
+}
